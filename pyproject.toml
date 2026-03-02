@@ -1,0 +1,16 @@
+[project]
+name = "banking-system"
+version = "0.1.0"
+description = "Deterministic in-memory banking system with 2PL and OCC"
+requires-python = ">=3.10"
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
